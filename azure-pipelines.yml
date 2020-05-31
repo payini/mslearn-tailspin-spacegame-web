@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 # ASP.NET Core (.NET Framework)
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 # Working on exercise. Re-enabled CI pipeline.
 
-=======
->>>>>>> upstream/unit-tests
 trigger:
 - '*'
 
@@ -18,17 +15,10 @@ pool:
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-<<<<<<< HEAD
   dotnetSdkVersion: '3.1.100'
 
 steps:
 - task: UseDotNet@2
-=======
-  dotnetSdkVersion: '2.1.505'
-
-steps:
-- task: DotNetCoreInstaller@0
->>>>>>> upstream/unit-tests
   displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
@@ -72,8 +62,4 @@ steps:
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
-<<<<<<< HEAD
   condition: succeeded()
-=======
-  condition: succeeded()
->>>>>>> upstream/unit-tests
