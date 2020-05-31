@@ -1,3 +1,4 @@
+[![Build Status](https://themagicsoftware.visualstudio.com/DevOps%20Demo%20Build%20Pipelines/_apis/build/status/payini.mslearn-tailspin-spacegame-web?branchName=master)](https://themagicsoftware.visualstudio.com/DevOps%20Demo%20Build%20Pipelines/_build/latest?definitionId=7&branchName=master)
 
 # Contributing
 
