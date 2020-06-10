@@ -1,3 +1,7 @@
+# Space Game Web
+[![Build Status](https://themagicsoftware.visualstudio.com/DevOps%20Demo%20Build%20Pipelines/_apis/build/status/payini.mslearn-tailspin-spacegame-web?branchName=master)](https://themagicsoftware.visualstudio.com/DevOps%20Demo%20Build%20Pipelines/_build/latest?definitionId=7&branchName=master)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=payini_mslearn-tailspin-spacegame-web&metric=alert_status)](https://sonarcloud.io/dashboard?id=payini_mslearn-tailspin-spacegame-web)
 
 # Contributing
 
