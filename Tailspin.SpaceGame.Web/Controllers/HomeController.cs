@@ -18,8 +18,8 @@ namespace TailSpin.SpaceGame.Web.Controllers
         }
 
         public async Task<IActionResult> Index(
-            int page = 1, 
-            int pageSize = 10, 
+            int page = 1,
+            int pageSize = 10,
             string mode = "",
             string region = ""
             )
@@ -74,14 +74,14 @@ namespace TailSpin.SpaceGame.Web.Controllers
 
                 return View(vm);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return View(vm);
             }
         }
 
         [Route("/profile/{id}")]
-        public async Task<IActionResult> Profile(string id, string rank="")
+        public async Task<IActionResult> Profile(string id, string rank = "")
         {
             try
             {

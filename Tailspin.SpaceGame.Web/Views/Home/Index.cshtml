@@ -54,13 +54,14 @@
                 </div>
 
                 @{
-                    if (Model.Scores.Count() == 0)
+                    if (Model.Scores?.Count() == 0)
                     {
                         <div class="row" style="margin-left: 5px; margin-top: 20px;">No scores match your selection.</div>
                     }
-
+                if (Model.Scores != null)
+                {
                     int rank = ((Model.Page - 1) * Model.PageSize) + 1;
-                    foreach (var score in Model.Scores)
+                    foreach (var score in Model?.Scores)
                     {
                         <div class="row high-score align-items-center">
                             <div class="col-sm-1 score-data">
@@ -87,6 +88,7 @@
                                 @score.Score.HighScore.ToString("N0")
                             </div>
                         </div>
+                    }
                     }
                 }
                 <nav aria-label="...">
